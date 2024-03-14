@@ -3,10 +3,17 @@
 
 <head>
   <title>ETH Generator</title>
+  <script>
+    function generate() {
+      const text = '0.0001 ETH has been generated';
+      document.getElementById("valueP").innerHTML = text;
+    }
+  </script>
 </head>
 
 <body>
-  Button
+  <button onclick="generate()">Generate Value</button>
+  <p id="valueP"></p>
 </body>
 
 </html>
