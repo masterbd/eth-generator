@@ -4,8 +4,11 @@
 <head>
   <title>ETH Generator</title>
   <script>
+    window.counter = 0;
     function generate() {
-      const text = '0.0001 ETH has been generated';
+      console.log(window.counter, Number(0.0001))
+      window.counter = Number(window.counter) + Number(0.0001);
+      const text = `${counter.toFixed(4)} ETH has been generated`;
       document.getElementById("valueP").innerHTML = text;
     }
   </script>
@@ -43,12 +46,6 @@
 
     button:hover {
       background: #433971;
-    }
-
-    #valueP {
-      /* position: absolute; */
-      bottom:
-        /* font-size: 18px; */
     }
   </style>
 </head>
